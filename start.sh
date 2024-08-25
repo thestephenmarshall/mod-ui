@@ -5,7 +5,7 @@ set -e
 # setup environment variables
 WORKDIR=${WORKDIR:=~/mod-workdir}
 
-export MOD_DEV_ENVIRONMENT=0
+# export MOD_DEV_ENVIRONMENT=0
 export MOD_LOG=1
 export MOD_DEV_HOST=1
 
