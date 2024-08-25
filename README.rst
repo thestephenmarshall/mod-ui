@@ -58,3 +58,26 @@ And now you are ready to start the webserver::
 
 Setting the environment variables is needed when developing on a PC.
 Open your browser and point to http://localhost:8888/.
+
+UI Development
+---
+
+To manage tooling, the use of `asdf` is required. Asdf is a version manager that allows you to easily install and manage multiple versions of different tools, such as Node.js. This is particularly useful when working on projects that require specific versions of tools.
+
+To get started with asdf, you need to install it on your system. You can find installation instructions for your specific operating system on the asdf website.
+
+The UI is built using Vite and React. To start the development server, first ensure that you have the required dependencies installed::
+
+Install the required tools::
+    
+    $ (cd src; asdf plugin-add nodejs pnpm; asdf install)
+
+Install the required packages::
+    
+    $ (cd src; pnpm install)
+
+Then start the development server::
+
+    $ (cd src; pnpm dev)
+
+This will start a development server on http://localhost:5173. The server will automatically reload when you make changes to the source code.
