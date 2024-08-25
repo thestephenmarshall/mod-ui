@@ -67,8 +67,8 @@ HTML_DIR = os.environ.get('MOD_HTML_DIR', join(sys.prefix, 'share/mod/html/'))
 DEFAULT_PEDALBOARD_COPY = os.environ.pop('MOD_DEFAULT_PEDALBOARD', join(sys.prefix, 'share/mod/default.pedalboard'))
 DEFAULT_PEDALBOARD = join(LV2_PEDALBOARDS_DIR, "default.pedalboard")
 
-DEFAULT_ICON_TEMPLATE = join(HTML_DIR, 'resources/templates/pedal-default.html')
-DEFAULT_SETTINGS_TEMPLATE = join(HTML_DIR, 'resources/settings.html')
+DEFAULT_ICON_TEMPLATE = join(HTML_DIR, 'index.html')
+DEFAULT_SETTINGS_TEMPLATE = join(HTML_DIR, 'index.html')
 DEFAULT_ICON_IMAGE = {
     'thumbnail': join(HTML_DIR, 'resources/pedals/default-thumbnail.png'),
     'screenshot': join(HTML_DIR, 'resources/pedals/default-screenshot.png')
